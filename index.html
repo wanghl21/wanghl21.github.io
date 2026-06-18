@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,102 +11,105 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="王慧丽主页">Huili Wang</a>
-      <nav class="nav" aria-label="主导航">
-        <a href="#research">研究</a>
-        <a href="#publications">论文</a>
-        <a href="#experience">经历</a>
-        <a href="#contact">联系</a>
-      </nav>
-    </header>
-
-    <main id="top">
-      <section class="hero section">
-        <div class="hero-text">
-          <p class="eyebrow">Ph.D. Student · Tsinghua University</p>
-          <h1>王慧丽 <span>Huili Wang</span></h1>
-          <p class="lead">
-            清华大学电子工程系博士生，关注大语言模型、检索增强生成、隐私保护、可信评测与内容安全。
-           
-          </p>
-          <div class="hero-actions" aria-label="主页操作">
-            <a class="button primary" href="mailto:wwwanghuili@gmail.com">Email</a>
-            <a class="button" href="https://github.com/wanghl21">GitHub</a>
-            <a class="button" href="main.pdf">CV</a>
-          </div>
+    <main class="page">
+      <header class="header">
+        <div class="language-switch" aria-label="Language switch">
+          <button type="button" data-lang-button="en" aria-pressed="true">English</button>
+          <button type="button" data-lang-button="zh" aria-pressed="false">中文</button>
         </div>
+        <h1>
+          <span data-lang="en">Huili Wang</span>
+          <span data-lang="zh" hidden>王慧丽 <span class="english-name">Huili Wang</span></span>
+        </h1>
+        <p data-lang="en">
+          Ph.D. Student, Department of Electronic Engineering, Tsinghua University
+        </p>
+        <p data-lang="zh" hidden>
+          清华大学电子工程系博士生
+        </p>
+        <p class="links">
+          <a href="mailto:wwwanghuili@gmail.com">Email</a>
+          <a href="https://github.com/wanghl21">GitHub</a>
+        </p>
+      </header>
 
-        <aside class="profile-panel" aria-label="个人信息">
-          <div class="avatar" aria-hidden="true">WH</div>
-          <dl>
-            <div>
-              <dt>Affiliation</dt>
-              <dd>Department of Electronic Engineering, Tsinghua University</dd>
-            </div>
-            <div>
-              <dt>Research</dt>
-              <dd>LLM, RAG, Privacy, Trustworthy AI, Content Safety</dd>
-            </div>
-            <div>
-              <dt>Email</dt>
-              <dd><a href="mailto:wwwanghuili@gmail.com">wwwanghuili@gmail.com</a></dd>
-            </div>
-          </dl>
-        </aside>
+      <section>
+        <h2 data-lang="en">About</h2>
+        <h2 data-lang="zh" hidden>个人简介</h2>
+        <p data-lang="en">
+          I am a Ph.D. student in the Department of Electronic Engineering at Tsinghua University.
+          My research interests include large language models, retrieval-augmented generation,
+          privacy-preserving inference, trustworthy evaluation, and content safety. 
+        </p>
+        <p data-lang="zh" hidden>
+          我是清华大学电子工程系博士生，研究方向包括大语言模型、检索增强生成、隐私保护、可信评测与内容安全。
+        </p>
       </section>
 
-      <section class="section compact">
-        <div class="stats" aria-label="概览">
-          <div>
-            <strong>2024-2027</strong>
-            <span>清华大学电子工程系博士</span>
+      <section>
+        <h2 data-lang="en">Research Interests</h2>
+        <h2 data-lang="zh" hidden>研究方向</h2>
+        <ul data-lang="en">
+          <li>Large Language Models and Retrieval-Augmented Generation</li>
+          <li>Privacy-Preserving Inference, Data Security and Trustworthy AI Evaluation</li>
+        </ul>
+        <ul data-lang="zh" hidden>
+          <li>大语言模型与检索增强生成</li>
+          <li>隐私保护推理，数据安全和可信 AI 评测</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 data-lang="en">Education</h2>
+        <h2 data-lang="zh" hidden>教育背景</h2>
+        <div class="item" data-lang="en">
+          <div class="row">
+            <strong>Tsinghua University, Department of Electronic Engineering</strong>
+            <span>2024.08 - 2027.06</span>
           </div>
-          <div>
-            <strong>CCF-A</strong>
-            <span>TOIS, TIFS, TSC, TDSC, CVPR, ACL</span>
+          <p>Ph.D. in Electronic Engineering. Advisors: Pingyi Fan and Yongfeng Huang.</p>
+        </div>
+        <div class="item" data-lang="en">
+          <div class="row">
+            <strong>Tsinghua University, Institute for Network Sciences and Cyberspace</strong>
+            <span>2021.08 - 2024.06</span>
           </div>
-          <div>
-            <strong>RAG & Trust</strong>
-            <span>隐私保护、成员推理、水印与安全评测</span>
+          <p>M.S. in Cyberspace Security. Advisor: Yongfeng Huang.</p>
+        </div>
+        <div class="item" data-lang="en">
+          <div class="row">
+            <strong>Beijing University of Posts and Telecommunications</strong>
+            <span>2017.08 - 2021.06</span>
           </div>
+          <p>B.Eng. in Cyberspace Security. Rank: 2/64.</p>
+        </div>
+        <div class="item" data-lang="zh" hidden>
+          <div class="row">
+            <strong>清华大学，电子工程系</strong>
+            <span>2024.08 - 2027.06</span>
+          </div>
+          <p>电子信息专业博士；导师：樊平毅、黄永峰。</p>
+        </div>
+        <div class="item" data-lang="zh" hidden>
+          <div class="row">
+            <strong>清华大学，网络科学与网络空间研究院</strong>
+            <span>2021.08 - 2024.06</span>
+          </div>
+          <p>网络空间安全专业硕士；导师：黄永峰。</p>
+        </div>
+        <div class="item" data-lang="zh" hidden>
+          <div class="row">
+            <strong>北京邮电大学，网络空间安全学院</strong>
+            <span>2017.08 - 2021.06</span>
+          </div>
+          <p>信息安全专业学士；专业排名 2/64。</p>
         </div>
       </section>
 
-      <section id="research" class="section two-column">
-        <div>
-          <p class="section-kicker">Research</p>
-          <h2>研究方向</h2>
-        </div>
-        <div class="content-grid">
-          <article class="card">
-            <h3>大语言模型与检索增强生成</h3>
-            <p>
-              面向端云协同 RAG 与个性化大模型服务，研究隐私保护推理、上下文压缩、知识贡献度评估和生成控制，
-              提升模型对外部知识的理解、推理与交互能力。
-            </p>
-          </article>
-          <article class="card">
-            <h3>可信评测与数据安全</h3>
-            <p>
-              围绕大语言模型、扩散模型和多模态 RAG 服务，开展成员推理、数据水印、黑盒服务审计与模型记忆风险评估。
-            </p>
-          </article>
-          <article class="card">
-            <h3>内容安全与异常检测</h3>
-            <p>
-              结合预训练模型、自训练策略与注意力特征融合，构建有限监督和异构场景下的文本、语音异常检测框架。
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section id="publications" class="section two-column">
-        <div>
-          <p class="section-kicker">Publications</p>
-          <h2>代表论文</h2>
-        </div>
-        <ol class="pub-list">
+      <section>
+        <h2 data-lang="en">Selected Publications</h2>
+        <h2 data-lang="zh" hidden>代表论文</h2>
+        <ol class="publications">
           <li>
             <strong>Wang H</strong>, et al. Learning Human Feedback from Large Language Models for
             Content Quality-aware Recommendation. <em>ACM TOIS</em>, 2025.
@@ -134,57 +137,82 @@
         </ol>
       </section>
 
-      <section id="experience" class="section two-column">
-        <div>
-          <p class="section-kicker">Experience</p>
-          <h2>教育与经历</h2>
+      <section>
+        <h2 data-lang="en">Experience</h2>
+        <h2 data-lang="zh" hidden>实习经历</h2>
+        <div class="item" data-lang="en">
+          <div class="row">
+            <strong>Zhongguancun Laboratory, Research Intern</strong>
+            <span>2025.09 - Present</span>
+          </div>
+          <p>
+            Conducted safety benchmarking for generative model services and RAG systems, with a focus
+            on context injection risks, information pollution, retrieval, prompt design, adversarial
+            sample generation, and answer evaluation.
+          </p>
         </div>
-        <div class="timeline">
-          <article>
-            <time>2024.08 - 2027.06</time>
-            <h3>清华大学，电子工程系</h3>
-            <p>电子信息专业博士；导师：樊平毅、黄永峰。</p>
-          </article>
-          <article>
-            <time>2021.08 - 2024.06</time>
-            <h3>清华大学，网络科学与网络空间研究院</h3>
-            <p>网络空间安全专业硕士；研究方向：内容安全与自然语言处理。</p>
-          </article>
-          <article>
-            <time>2017.08 - 2021.06</time>
-            <h3>北京邮电大学，网络空间安全学院</h3>
-            <p>信息安全专业学士；专业排名 2/64。</p>
-          </article>
-          <article>
-            <time>2025.09 - 至今</time>
-            <h3>中关村国家实验室，研究型实习生</h3>
-            <p>参与生成式模型服务动态安全评测平台建设，研究 RAG 场景下的上下文注入风险与信息污染问题。</p>
-          </article>
+        <div class="item" data-lang="zh" hidden>
+          <div class="row">
+            <strong>中关村国家实验室，研究型实习生</strong>
+            <span>2025.09 - 至今</span>
+          </div>
+          <p>
+            参与生成式模型服务动态安全评测平台建设，围绕 RAG 场景下的上下文注入风险、
+            信息污染、检索召回、Prompt 设计、对抗样本生成与回答评估开展研究。
+          </p>
         </div>
       </section>
 
-      <section class="section two-column">
-        <div>
-          <p class="section-kicker">Service</p>
-          <h2>学术服务与荣誉</h2>
-        </div>
-        <div class="service-list">
-          <p>AAAI、ICML、CVPR、NeurIPS、IEEE TDSC 审稿人；清华大学计算机程序设计课程助教。</p>
-          <p>曾获研究生国家奖学金、北京市优秀毕业生、北京市优秀毕业论文、清华大学综合奖学金。</p>
-        </div>
+      <section>
+        <h2 data-lang="en">Service and Honors</h2>
+        <h2 data-lang="zh" hidden>学术服务与荣誉</h2>
+        <p data-lang="en">
+          Reviewer for AAAI, ICML, CVPR, NeurIPS, and IEEE TDSC. Teaching assistant for Programming
+          Course at Tsinghua University.
+        </p>
+        <p data-lang="en">
+          National Graduate Scholarship; Beijing Outstanding Graduate; Beijing Outstanding Thesis;
+          Tsinghua University Comprehensive Scholarship.
+        </p>
+        <p data-lang="zh" hidden>
+          AAAI、ICML、CVPR、NeurIPS、IEEE TDSC 审稿人；清华大学计算机程序设计课程助教。
+        </p>
+        <p data-lang="zh" hidden>
+          研究生国家奖学金；北京市优秀毕业生；北京市优秀毕业论文；清华大学综合奖学金。
+        </p>
       </section>
     </main>
+    <script>
+      const buttons = document.querySelectorAll("[data-lang-button]");
+      const nodes = document.querySelectorAll("[data-lang]");
 
-    <footer id="contact" class="footer">
-      <div>
-        <h2>Contact</h2>
-        <p>
-          <a href="mailto:wwwanghuili@gmail.com">wwwanghuili@gmail.com</a>
-          <span aria-hidden="true"> · </span>
-          <a href="https://github.com/wanghl21">github.com/wanghl21</a>
-        </p>
-      </div>
-      <a class="top-link" href="#top">Back to top</a>
-    </footer>
+      function setLanguage(language) {
+        document.documentElement.lang = language === "zh" ? "zh-CN" : "en";
+        nodes.forEach((node) => {
+          node.hidden = node.dataset.lang !== language;
+        });
+        buttons.forEach((button) => {
+          const active = button.dataset.langButton === language;
+          button.setAttribute("aria-pressed", String(active));
+        });
+        try {
+          localStorage.setItem("homepage-language", language);
+        } catch (error) {
+          // Ignore storage restrictions; language switching still works for the current page.
+        }
+      }
+
+      buttons.forEach((button) => {
+        button.addEventListener("click", () => setLanguage(button.dataset.langButton));
+      });
+
+      let savedLanguage = "en";
+      try {
+        savedLanguage = localStorage.getItem("homepage-language") || "en";
+      } catch (error) {
+        savedLanguage = "en";
+      }
+      setLanguage(savedLanguage);
+    </script>
   </body>
 </html>
