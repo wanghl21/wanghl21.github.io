@@ -116,6 +116,12 @@ li {
   color: var(--muted);
 }
 
+.footnote {
+  margin: 0 0 8px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
 .publications li {
   margin-bottom: 12px;
 }
